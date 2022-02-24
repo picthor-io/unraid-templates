@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>picthor.io</Name>
+    <Repository>picthorio/picthor-io:latest</Repository>
+    <Registry>https://hub.docker.com/r/picthorio/picthor-io</Registry>
+    <Network>bridge</Network>
+    <MyIP/>
+    <Shell>sh</Shell>
+    <Privileged>false</Privileged>
+    <Support/>
+    <Project>https://github.com/picthor-io/picthor-io-server</Project>
+    <Overview>&amp;lt;h1&amp;gt;&#xD;
+        &amp;lt;em&amp;gt;Picthor.Io photo library browser&amp;lt;/em&amp;gt;&#xD;
+        &amp;lt;/h1&amp;gt;&#xD;
+        &amp;lt;p&amp;gt;&#xD;
+        &amp;lt;em&amp;gt;&#xD;
+        The goal of this software to provide a simple, fast and lightweight tool for browsing personal photo libraries.&#xD;
+        &amp;lt;/em&amp;gt;&#xD;
+        &amp;lt;/p&amp;gt;&#xD;
+        &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#xD;
+        &amp;lt;p&amp;gt;&#xD;
+        &amp;lt;strong&amp;gt;WARNING: &amp;lt;/strong&amp;gt;Currently there is no authentication functionality, deploy with care.&#xD;
+        &amp;lt;/p&amp;gt;&#xD;
+        &amp;lt;p&amp;gt;&#xD;
+        &amp;lt;strong&amp;gt;BETA: &amp;lt;/strong&amp;gt;This project is in early development stage, expect bugs.&#xD;
+        &amp;lt;/p&amp;gt;&#xD;
+        &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#xD;
+    </Overview>
+    <Category>MediaApp:Photos MediaServer:Photos Status:Beta</Category>
+    <WebUI>http://[IP]:[PORT:5000]</WebUI>
+    <TemplateURL/>
+    <Icon>https://raw.githubusercontent.com/picthor-io/picthor-io-ui/ea17bf068c8b2e2ae0ce5fc551a35560dd262252/src/assets/picthor-logo-short.png</Icon>
+    <ExtraParams/>
+    <PostArgs/>
+    <CPUset/>
+    <DateInstalled>1645679035</DateInstalled>
+    <DonateText/>
+    <DonateLink/>
+    <Description>&amp;lt;h1&amp;gt;&#xD;
+        &amp;lt;em&amp;gt;Picthor.Io photo library browser&amp;lt;/em&amp;gt;&#xD;
+        &amp;lt;/h1&amp;gt;&#xD;
+        &amp;lt;p&amp;gt;&#xD;
+        &amp;lt;em&amp;gt;&#xD;
+        The goal of this software to provide a simple, fast and lightweight tool for browsing personal photo libraries.&#xD;
+        &amp;lt;/em&amp;gt;&#xD;
+        &amp;lt;/p&amp;gt;&#xD;
+        &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#xD;
+        &amp;lt;p&amp;gt;&#xD;
+        &amp;lt;strong&amp;gt;WARNING: &amp;lt;/strong&amp;gt;Currently there is no authentication functionality, deploy with care.&#xD;
+        &amp;lt;/p&amp;gt;&#xD;
+        &amp;lt;p&amp;gt;&#xD;
+        &amp;lt;strong&amp;gt;BETA: &amp;lt;/strong&amp;gt;This project is in early development stage, expect bugs.&#xD;
+        &amp;lt;/p&amp;gt;&#xD;
+        &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#xD;
+    </Description>
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish>
+            <Port>
+                <HostPort>5000</HostPort>
+                <ContainerPort>5000</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
+    <Data>
+        <Volume>
+            <HostDir/>
+            <ContainerDir>/root/picthor/cache</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir/>
+            <ContainerDir>/root/picthor-root-1</ContainerDir>
+            <Mode>ro</Mode>
+        </Volume>
+    </Data>
+    <Environment>
+        <Variable>
+            <Value/>
+            <Name>PICTHOR_WEB_ADDRESS</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value/>
+            <Name>PICTHOR_POSTGRES_HOST</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value/>
+            <Name>PICTHOR_POSTGRES_PORT</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value/>
+            <Name>PICTHOR_POSTGRES_USERNAME</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value/>
+            <Name>PICTHOR_POSTGRES_PASSWORD</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value/>
+            <Name>PICTHOR_POSTGRES_DB</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value>/root/picthor/cache</Value>
+            <Name>PICTHOR_CACHE_DIR</Name>
+            <Mode/>
+        </Variable>
+    </Environment>
+    <Labels/>
+    <Config Name="Web UI Port" Target="5000" Default="5000" Mode="tcp" Description="Picthor is listening on port 5000 by default, map it to an available port on your unraid server" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
+    <Config Name="Cache path" Target="/root/picthor/cache" Default="" Mode="rw" Description="This is the place where all the generated thumbs and other cache files will be placed. Fast SSD is preferable." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Root directory path" Target="/root/picthor-root-1" Default="" Mode="ro" Description="Root path example where you should mount your photos library folder. Use this path when you will be adding a root dir in the web ui. Read only access mode is recommend." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Web address" Target="PICTHOR_WEB_ADDRESS" Default="" Mode="" Description="The url of your picthor installation.&#13;&#10;Usually: http://&amp;lt;your unraid ip&amp;gt;:&amp;lt;picthor web ui port&amp;gt;" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="PostgreSQL host" Target="PICTHOR_POSTGRES_HOST" Default="" Mode="" Description="Container Variable: PICTHOR_POSTGRES_HOST" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="PostgreSQL port" Target="PICTHOR_POSTGRES_PORT" Default="" Mode="" Description="Container Variable: PICTHOR_POSTGRES_PORT" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="PostgreSQL username" Target="PICTHOR_POSTGRES_USERNAME" Default="" Mode="" Description="Container Variable: PICTHOR_POSTGRES_USERNAME" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="PostgreSQL password" Target="PICTHOR_POSTGRES_PASSWORD" Default="" Mode="" Description="Container Variable: PICTHOR_POSTGRES_PASSWORD" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="PostgreSQL database" Target="PICTHOR_POSTGRES_DB" Default="" Mode="" Description="Container Variable: PICTHOR_POSTGRES_DB" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="PICTHOR_CACHE_DIR" Target="PICTHOR_CACHE_DIR" Default="/root/picthor/cache" Mode="" Description="Container path to cache dir. This should match the mapped " Type="Variable" Display="advanced-hide" Required="true" Mask="false">/root/picthor/cache</Config>
+</Container>
