@@ -7,7 +7,7 @@
     <MyIP/>
     <Shell>sh</Shell>
     <Privileged>false</Privileged>
-    <Support/>
+    <Support>https://forums.unraid.net/topic/120468-support-picthorio-photo-library-browser/</Support>
     <Project>https://github.com/picthor-io/picthor-io-server</Project>
     <Overview>&amp;lt;h1&amp;gt;&#xD;
         &amp;lt;em&amp;gt;Picthor.Io photo library browser&amp;lt;/em&amp;gt;&#xD;
@@ -24,16 +24,15 @@
         &amp;lt;p&amp;gt;&#xD;
         &amp;lt;strong&amp;gt;BETA: &amp;lt;/strong&amp;gt;This project is in early development stage, expect bugs.&#xD;
         &amp;lt;/p&amp;gt;&#xD;
-        &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#xD;
-    </Overview>
-    <Category>MediaApp:Photos MediaServer:Photos Status:Beta</Category>
+        &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;</Overview>
+    <Category>MediaApp:Photos MediaServer:Photos</Category>
     <WebUI>http://[IP]:[PORT:5000]</WebUI>
-    <TemplateURL/>
+    <TemplateURL>https://raw.githubusercontent.com/picthor-io/unraid-templates/master/picthor-io.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/picthor-io/picthor-io-ui/ea17bf068c8b2e2ae0ce5fc551a35560dd262252/src/assets/picthor-logo-short.png</Icon>
     <ExtraParams/>
     <PostArgs/>
     <CPUset/>
-    <DateInstalled>1645679035</DateInstalled>
+    <DateInstalled>1645719880</DateInstalled>
     <DonateText/>
     <DonateLink/>
     <Description>&amp;lt;h1&amp;gt;&#xD;
@@ -51,8 +50,7 @@
         &amp;lt;p&amp;gt;&#xD;
         &amp;lt;strong&amp;gt;BETA: &amp;lt;/strong&amp;gt;This project is in early development stage, expect bugs.&#xD;
         &amp;lt;/p&amp;gt;&#xD;
-        &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#xD;
-    </Description>
+        &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;</Description>
     <Networking>
         <Mode>bridge</Mode>
         <Publish>
