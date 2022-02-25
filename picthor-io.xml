@@ -10,25 +10,25 @@
     <Support>https://forums.unraid.net/topic/120468-support-picthorio-photo-library-browser/</Support>
     <Project>https://github.com/picthor-io/picthor-io-server</Project>
     <Overview>&amp;lt;h1&amp;gt;&#xD;
-        &amp;lt;em&amp;gt;Picthor.Io photo library browser&amp;lt;/em&amp;gt;&#xD;
-        &amp;lt;/h1&amp;gt;&#xD;
-        &amp;lt;p&amp;gt;&#xD;
-        &amp;lt;em&amp;gt;&#xD;
-        The goal of this software to provide a simple, fast and lightweight tool for browsing personal photo libraries.&#xD;
-        &amp;lt;/em&amp;gt;&#xD;
-        &amp;lt;/p&amp;gt;&#xD;
-        &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#xD;
-        &amp;lt;p&amp;gt;&#xD;
-        &amp;lt;strong&amp;gt;WARNING: &amp;lt;/strong&amp;gt;Currently there is no authentication functionality, deploy with care.&#xD;
-        &amp;lt;/p&amp;gt;&#xD;
-        &amp;lt;p&amp;gt;&#xD;
-        &amp;lt;strong&amp;gt;BETA: &amp;lt;/strong&amp;gt;This project is in early development stage, expect bugs.&#xD;
-        &amp;lt;/p&amp;gt;&#xD;
-        &amp;lt;br&amp;gt;&amp;lt;br&amp;gt;</Overview>
+&amp;lt;em&amp;gt;Picthor.Io photo library browser&amp;lt;/em&amp;gt;&#xD;
+&amp;lt;/h1&amp;gt;&#xD;
+&amp;lt;p&amp;gt;&#xD;
+&amp;lt;em&amp;gt;&#xD;
+The goal of this software to provide a simple, fast and lightweight tool for browsing personal photo libraries.&#xD;
+&amp;lt;/em&amp;gt;&#xD;
+&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#xD;
+&amp;lt;p&amp;gt;&#xD;
+&amp;lt;strong&amp;gt;WARNING: &amp;lt;/strong&amp;gt;Currently there is no authentication functionality, deploy with care.&#xD;
+&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;&#xD;
+&amp;lt;strong&amp;gt;BETA: &amp;lt;/strong&amp;gt;This project is in early development stage, expect bugs.&#xD;
+&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;    </Overview>
     <Category>MediaApp:Photos MediaServer:Photos</Category>
     <WebUI>http://[IP]:[PORT:5000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/picthor-io/unraid-templates/master/picthor-io.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/picthor-io/picthor-io-ui/ea17bf068c8b2e2ae0ce5fc551a35560dd262252/src/assets/picthor-logo-short.png</Icon>
+    <Icon>https://raw.githubusercontent.com/picthor-io/unraid-templates/main/picthor-logo-short-t.png</Icon>
     <ExtraParams/>
     <PostArgs/>
     <CPUset/>
